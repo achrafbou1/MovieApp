@@ -10,7 +10,7 @@ To get the Node server running locally:
 - Install Node from https://nodejs.org/en/download/
 - Clone this repo
 - Run `npm install` to install all required dependencies
-- Run `npm start` to start the local server
+- Run `node start app.js` to start the server
 
 # Code Overview
 
