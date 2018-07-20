@@ -1,0 +1,19 @@
+<% include partials/header %>
+<h1>More information about this movie</h1>
+<div class="container">
+         <div id="moreinfo">
+           <img class="float-left img-thumbnail mx-auto d-block" width="auto" height="auto" src="<%=data["Poster"] %>">
+           <h2><%= data["Title"] %></h2>
+           <h3><%= data["Year"] %></h3>
+           <h4 class="money"><i class="fas fa-money-bill-alt money"></i><%= data["BoxOffice"] %></h4>
+           <div class="boxoffice"></div>
+           <div class="rating"><i class="fas fa-star-half-alt rating"></i><%= data["imdbRating"] %>/10</div>
+           <div class="plot"><%= data["Plot"] %></div>
+           <div class="director"><i class="fas fa-user-tie"></i><%= data["Director"] %></div>
+           <div class="writer"><i class="fas fa-pen"></i><%= data["Writer"] %></div>
+           <div class="actors"><i class="fas fa-users"></i><%= data["Actors"] %></div>
+           <div class="language"><i class="fas fa-globe"></i><%= data["Language"] %> - <%= data["Country"] %></div>
+           <div class="awards"><i class="fas fa-trophy"></i><%= data["Awards"] %></div>
+           <a href="<%= data["Website"] %>"><%= data["Website"] %></div>
+ </div>
+ <% include partials/footer %>

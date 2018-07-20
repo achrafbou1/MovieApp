@@ -1,0 +1,17 @@
+<% include partials/header %>
+<h1>Results Page</h1>
+
+<div class="container">
+  <div class="row">
+       <ul>
+ <% data["Search"].forEach(function(movie) { %>
+<div class="col-lg-12 col-sm-12 movie"><li><img src="<%=movie["Poster"] %>"> <%= movie["Title"] %></li>
+<form action="/info" method="GET">
+    <button type="submit" class="btn btn-success" name="id" value="<%= movie["imdbID"] %>">More Info</button>
+</form>
+</div>
+<% });%>
+      </ul>
+   </div>
+</div>
+<% include partials/footer %>
