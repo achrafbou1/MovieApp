@@ -24,5 +24,7 @@ To get the Node server running locally:
 
 - `app.js` - The main application.
 - `views/` - This folder contains ejs views that are used for dynamic rendering of movies through the IMDB API.
+- `views/partials` - This folder contains secondary ejs views required for DRY code (header and footer).
 - `public/` - This folder contains the css files.
+
 
